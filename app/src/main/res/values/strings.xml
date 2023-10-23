@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">pdf_assignment</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="application_logo">Application_Logo</string>
+    <string name="qr_code">QR code</string>
+    <string name="notification_bell">Notification Bell</string>
+    <string name="vector_list">Vector List</string>
+    <string name="the_mission_legal_rights_limited">The Mission Legal rights limited</string>
+    <string name="allen_cooper">Allen Cooper</string>
+    <string name="continue_reading">Continue reading</string>
+    <string name="pdf_image">PDF Image</string>
+    <string name="_50_left">50% left</string>
+    <string name="in_progress">In Progress</string>
+    <string name="arrow">Arrow</string>
+    <string name="_4">4%</string>
+    <string name="book_details">Book Details</string>
+    <string name="image_description_background">Image Description Background</string>
+    <string name="description">DESCRIPTION</string>
+    <string name="e_book_price">E-Book Price:</string>
+    <string name="assign_book">Assign Book</string>
+    <string name="read_more">Read More</string>
+    <string name="more_books">More Books</string>
+</resources>

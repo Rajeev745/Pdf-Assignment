@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".PdfReaderFragment">
+
+    <FrameLayout
+        android:layout_width="357dp"
+        android:layout_height="44.44dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="23dp">
+
+        <include layout="@layout/header_view" />
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="15.56dp"
+        android:background="@color/card_color"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="14dp"
+            android:layout_height="10dp"
+            android:layout_marginStart="38dp"
+            android:layout_marginTop="23dp"
+            android:src="@drawable/ic_baseline_arrow_back_ios_24" />
+
+        <ImageView
+            android:id="@+id/search_btn"
+            android:layout_width="19.2dp"
+            android:layout_height="22dp"
+            android:layout_marginStart="184dp"
+            android:layout_marginTop="19dp"
+            android:src="@drawable/ic_baseline_search_24" />
+
+        <ImageView
+            android:id="@+id/list_btn"
+            android:layout_width="32.4dp"
+            android:layout_height="22dp"
+            android:layout_marginStart="20.8dp"
+            android:layout_marginTop="19dp"
+            android:src="@drawable/ic_baseline_list_24" />
+
+        <ImageView
+            android:id="@+id/edit_btn"
+            android:layout_width="17.92dp"
+            android:layout_height="22dp"
+            android:layout_marginStart="20.8dp"
+            android:layout_marginTop="19dp"
+            android:src="@drawable/ic_baseline_edit_24" />
+
+        <ImageView
+            android:id="@+id/grid_btn"
+            android:layout_width="22dp"
+            android:layout_height="22dp"
+            android:layout_marginStart="20.8dp"
+            android:layout_marginTop="19dp"
+            android:src="@drawable/ic_baseline_border_all_24" />
+
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/pdf_reader_fragment_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </FrameLayout>
+
+</LinearLayout>

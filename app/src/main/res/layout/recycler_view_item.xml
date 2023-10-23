@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="160dp"
+    android:layout_height="243dp">
+
+    <ImageView
+        android:id="@+id/recycler_view_pdf_image"
+        android:layout_width="match_parent"
+        android:layout_height="225.23dp"
+        android:background="@drawable/recycler_view_image_background"
+        android:scaleType="fitXY"
+        android:src="@drawable/card_image_first" />
+
+    <TextView
+        android:id="@+id/pdf_status_text"
+        android:layout_width="20dp"
+        android:layout_height="15dp"
+        android:layout_gravity="bottom"
+        android:fontFamily="@font/montserrat"
+        android:lineHeight="12.91dp"
+        android:text="@string/_4"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textFontWeight="600"
+        android:textSize="10sp"
+        tools:ignore="RtlCompat,UnusedAttribute" />
+
+    <View
+        android:id="@+id/blur_view"
+        android:layout_width="match_parent"
+        android:layout_height="225.23dp"
+        android:alpha="0.8"
+        android:background="@color/white"
+        android:visibility="gone" />
+
+    <FrameLayout
+        android:id="@+id/button_showmore"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="80dp"
+        android:background="@drawable/show_more_button_background"
+        android:visibility="gone">
+
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_gravity="center"
+            android:background="@drawable/ic_baseline_arrow_forward_24" />
+
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/more_books_text"
+        android:layout_width="50dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="150dp"
+        android:fontFamily="@font/montserrat"
+        android:text="@string/more_books"
+        android:textColor="@color/black"
+        android:textFontWeight="700"
+        android:visibility="gone" />
+</FrameLayout>

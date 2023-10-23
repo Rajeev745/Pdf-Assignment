@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomeFragment">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="28dp" />
+
+    <LinearLayout
+        android:layout_width="357dp"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_constraintStart_toStartOf="@id/guideline">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="44.44dp"
+            android:layout_marginTop="23dp">
+
+            <include layout="@layout/header_view" />
+
+        </FrameLayout>
+
+        <LinearLayout
+            android:layout_width="358dp"
+            android:layout_height="476dp"
+            android:layout_marginTop="16.56dp"
+            android:background="@drawable/card_background"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="219.4dp"
+                android:layout_height="308.85dp"
+                android:layout_marginStart="69dp"
+                android:layout_marginTop="16dp"
+                android:contentDescription="@string/pdf_image"
+                android:scaleType="fitCenter"
+                android:src="@drawable/card_image_first" />
+
+            <TextView
+                android:layout_width="230dp"
+                android:layout_height="20dp"
+                android:layout_marginStart="64dp"
+                android:layout_marginTop="27.15dp"
+                android:fontFamily="@font/montserrat"
+                android:lineHeight="32dp"
+                android:text="@string/the_mission_legal_rights_limited"
+                android:textColor="@color/white"
+                android:textFontWeight="600"
+                android:textSize="14sp"
+                tools:targetApi="p" />
+
+            <TextView
+                android:layout_width="174dp"
+                android:layout_height="17dp"
+                android:layout_marginStart="67dp"
+                android:ellipsize="end"
+                android:fontFamily="@font/montserrat"
+                android:lineHeight="14.63dp"
+                android:text="@string/allen_cooper"
+                android:textColor="@color/text_secondary"
+                android:textFontWeight="600"
+                android:textSize="12sp"
+                tools:targetApi="p" />
+
+            <FrameLayout
+                android:layout_width="230dp"
+                android:layout_height="12dp"
+                android:layout_marginStart="64dp"
+                android:layout_marginTop="7dp">
+
+                <ProgressBar
+                    android:id="@+id/progress_bar"
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="178dp"
+                    android:layout_height="7dp"
+                    android:layout_marginTop="3dp"
+                    android:progressDrawable="@drawable/progress_style" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="end"
+                    android:fontFamily="@font/montserrat"
+                    android:lineHeight="12.19dp"
+                    android:text="@string/_50_left"
+                    android:textColor="@color/white"
+                    android:textFontWeight="600"
+                    android:textSize="10sp"
+                    tools:ignore="SmallSp"
+                    tools:targetApi="p" />
+
+            </FrameLayout>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/continue_reading_btn"
+                style="@style/MyButtonStyle"
+                android:layout_width="170dp"
+                android:layout_height="31dp"
+                android:layout_marginStart="94dp"
+                android:layout_marginTop="13dp"
+                android:text="@string/continue_reading" />
+
+        </LinearLayout>
+
+        <FrameLayout
+            android:layout_width="358dp"
+            android:layout_height="19dp"
+            android:layout_marginTop="12dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:fontFamily="@font/montserrat"
+                android:lineHeight="17.07dp"
+                android:text="@string/in_progress"
+                android:textColor="@color/black"
+                android:textFontWeight="600"
+                android:textSize="14sp"
+                tools:ignore="UnusedAttribute" />
+
+            <ImageView
+                android:id="@+id/progress_btn"
+                android:layout_width="14dp"
+                android:layout_height="14dp"
+                android:layout_gravity="end"
+                android:contentDescription="@string/arrow"
+                android:src="@drawable/ic_baseline_arrow_forward_ios_24" />
+        </FrameLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycler_view"
+            android:layout_width="358dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="268dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="73dp"
+        android:layout_marginBottom="30dp"
+        android:alpha="0.5"
+        android:background="@drawable/floater_background"
+        android:elevation="40dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

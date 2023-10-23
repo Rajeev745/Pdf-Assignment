@@ -1,0 +1,210 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PdfDescriptionFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="80dp">
+
+            <ImageButton
+                android:id="@+id/back_button"
+                android:layout_width="29dp"
+                android:layout_height="27dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="28dp"
+                android:background="@color/white"
+                android:src="@drawable/ic_baseline_arrow_back_ios_24"
+                app:tint="@color/black" />
+
+            <TextView
+                android:layout_width="106dp"
+                android:layout_height="21dp"
+                android:layout_marginStart="154dp"
+                android:layout_marginTop="30dp"
+                android:fontFamily="@font/montserrat"
+                android:lineHeight="19.5dp"
+                android:text="@string/book_details"
+                android:textColor="@color/black"
+                android:textFontWeight="600"
+                android:textSize="16sp"
+                tools:ignore="UnusedAttribute" />
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="302dp"
+            android:layout_height="380dp"
+            android:layout_marginStart="56dp">
+
+            <ImageView
+                android:id="@+id/img_one"
+                android:layout_width="match_parent"
+                android:layout_height="309dp"
+                android:background="@drawable/image_description_background"
+                android:contentDescription="@string/image_description_background"
+                android:src="@drawable/card_image_first" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="51dp"
+                android:layout_gravity="bottom"
+                android:layout_marginStart="5dp"
+                android:orientation="horizontal">
+
+
+                <ImageView
+                    android:id="@+id/img_two"
+                    android:layout_width="61.03dp"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/image_description_background"
+                    android:contentDescription="@string/image_description_background"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/card_image_first" />
+
+                <ImageView
+                    android:id="@+id/img_three"
+                    android:layout_width="61.03dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="16dp"
+                    android:background="@drawable/image_description_background"
+                    android:contentDescription="@string/image_description_background"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/card_image_first" />
+
+                <ImageView
+                    android:id="@+id/img_four"
+                    android:layout_width="61.03dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="16dp"
+                    android:background="@drawable/image_description_background"
+                    android:contentDescription="@string/image_description_background"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/card_image_first" />
+
+                <ImageView
+                    android:id="@+id/img_five"
+                    android:layout_width="61.03dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="16dp"
+                    android:background="@drawable/image_description_background"
+                    android:contentDescription="@string/image_description_background"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/card_image_first" />
+
+            </LinearLayout>
+
+        </FrameLayout>
+
+        <TextView
+            android:id="@+id/pdf_name"
+            android:layout_width="286dp"
+            android:layout_height="21dp"
+            android:layout_marginStart="64dp"
+            android:layout_marginTop="36dp"
+            android:fontFamily="@font/montserrat"
+            android:text=""
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textFontWeight="600"
+            android:textSize="18sp" />
+
+        <View
+            android:layout_width="334dp"
+            android:layout_height="1dp"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="36dp"
+            android:background="@color/line_color" />
+
+        <TextView
+            android:layout_width="134dp"
+            android:layout_height="19dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="22dp"
+            android:fontFamily="@font/montserrat"
+            android:text="@string/description"
+            android:textColor="@color/card_color"
+            android:textFontWeight="600"
+            android:textSize="14sp" />
+
+        <LinearLayout
+            android:layout_width="354dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="13dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/pdf_description"
+                android:layout_width="354dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/cabin"
+                android:lineHeight="25dp"
+                android:textColor="@color/black"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/read_more"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:focusable="true"
+                android:text="@string/read_more"
+                android:textColor="@color/card_color" />
+
+        </LinearLayout>
+
+        <FrameLayout
+            android:layout_width="211dp"
+            android:layout_height="47dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="-2dp">
+
+            <TextView
+                android:layout_width="117dp"
+                android:layout_height="20dp"
+                android:layout_marginTop="14dp"
+                android:fontFamily="@font/cabin"
+                android:text="@string/e_book_price"
+                android:textColor="@color/text_primary"
+                android:textFontWeight="600"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/pdf_price"
+                android:layout_width="94dp"
+                android:layout_height="47dp"
+                android:layout_marginStart="117dp"
+                android:layout_marginTop="11dp"
+                android:fontFamily="@font/cabin"
+                android:text="@string/e_book_price"
+                android:textColor="@color/black"
+                android:textFontWeight="700"
+                android:textSize="20sp" />
+
+        </FrameLayout>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/assign_book_btn"
+            android:layout_width="183dp"
+            android:layout_height="54dp"
+            android:layout_marginStart="116dp"
+            android:layout_marginTop="14dp"
+            android:layout_marginBottom="40dp"
+            android:background="@drawable/button_style_two"
+            android:fontFamily="@font/cabin"
+            android:text="@string/assign_book"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textFontWeight="700"
+            android:textSize="18sp" />
+
+    </LinearLayout>
+</ScrollView>
